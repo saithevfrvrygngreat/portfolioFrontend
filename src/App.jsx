@@ -27,7 +27,7 @@ function App() {
 
   useEffect(() => {
     setLoading(true);
-    axios.get('https://portfoliobackend-l4vf.onrender.com/')
+    axios.get('https://portfoliobackend-l4vf.onrender.com/api/cv')
       .then(res => {
         setCvData(res.data);
         setError(null);
