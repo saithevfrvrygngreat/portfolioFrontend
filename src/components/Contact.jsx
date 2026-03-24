@@ -6,16 +6,42 @@ const Contact = ({ theme, isDarkMode }) => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Portfolio Inquiry from ${formData.name}`);
-    const body = encodeURIComponent(`${formData.message}\n\nFrom: ${formData.name}\nEmail: ${formData.email}`);
-    window.location.href = `mailto:dasettisaikumar@gmail.com?subject=${subject}&body=${body}`;
-    setStatus('Opening email client...');
-    setTimeout(() => {
-        setStatus('');
-        setFormData({ name: '', email: '', message: '' });
-    }, 2500);
+    setStatus('Sending your inquiry...');
+
+    // Simple email validation matching @gmail.com or other valid formats
+    if (!formData.email.includes('@')) {
+        setStatus('Please enter a valid email address.');
+        return;
+    }
+
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: JSON.stringify({
+                access_key: "7fc539a6-1574-4752-9047-976d2161440b", 
+                name: formData.name,
+                email: formData.email,
+                message: formData.message,
+                subject: `New Portfolio Inquiry from ${formData.name}`
+            })
+        });
+        
+        const result = await response.json();
+        if (result.success) {
+            setStatus('Message Sent Successfully! 🎉');
+            setFormData({ name: '', email: '', message: '' });
+        } else {
+            setStatus('Failed to send message. Please try again.');
+        }
+    } catch (error) {
+        setStatus('An error occurred. Check your internet connection.');
+    }
   };
 
   return (
@@ -133,7 +159,7 @@ const Contact = ({ theme, isDarkMode }) => {
                   type="submit"
                   style={{ width: '100%', padding: '1.4rem', background: theme.text, color: theme.background, border: 'none', borderRadius: '12px', fontSize: '0.85rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.15em', cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1rem', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}
               >
-                  <Send size={18} /> Send Inquiry
+                  <Send size={18} /> Send
               </motion.button>
               {status && <p style={{ marginTop: '1.5rem', textAlign: 'center', fontSize: '0.9rem', color: theme.accent, fontWeight: 700 }}>{status}</p>}
           </form>
