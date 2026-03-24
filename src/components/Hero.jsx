@@ -57,7 +57,7 @@ const Hero = ({ theme, name, isDarkMode }) => {
           <div style={{ fontSize: 'clamp(1rem, 2vw, 1.5rem)', fontWeight: 600, color: theme.accent, marginBottom: '1.5rem', minHeight: '2.5rem', display: 'flex', justifyContent: 'inherit', alignItems: 'center' }} className="roles-container">
              <TypedRoles theme={theme} isDarkMode={isDarkMode} />
           </div>
-          <p style={{ fontSize: 'clamp(0.9rem, 1.2vw, 1.1rem)', opacity: 0.7, maxWidth: '600px', marginBottom: '2.5rem', lineHeight: 1.6, margin: '0 auto 2.5rem' }}>A developer dedicated to building high-end, scalable web experiences where refined design meets robust engineering.</p>
+          <p style={{ fontSize: 'clamp(0.9rem, 1.2vw, 1.1rem)', opacity: 0.7, maxWidth: '600px', marginBottom: '1.5rem', lineHeight: 1.6 }}>A developer dedicated to building high-end, scalable web experiences where refined design meets robust engineering.</p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'inherit' }}>
               <a href="#projects" style={{ textDecoration: 'none' }}><button style={{ padding: '0.8rem 2rem', background: theme.accent, border: 'none', color: '#fff', borderRadius: '50px', cursor: 'pointer', fontWeight: 700, textTransform: 'uppercase', fontSize: '0.8rem' }}>View Projects</button></a>
               <a href="#coding" style={{ textDecoration: 'none' }}><button style={{ padding: '0.8rem 2rem', background: theme.accent, border: 'none', color: '#fff', borderRadius: '50px', cursor: 'pointer', fontWeight: 700, textTransform: 'uppercase', fontSize: '0.8rem' }}>Coding Platforms</button></a>

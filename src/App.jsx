@@ -27,7 +27,11 @@ function App() {
 
   useEffect(() => {
     setLoading(true);
-    axios.get('https://portfoliobackend-l4vf.onrender.com/api/cv')
+    const apiUrl = import.meta.env.DEV 
+      ? 'http://localhost:5000/api/cv' 
+      : 'https://portfoliobackend-l4vf.onrender.com/api/cv';
+      
+    axios.get(apiUrl)
       .then(res => {
         setCvData(res.data);
         setError(null);
