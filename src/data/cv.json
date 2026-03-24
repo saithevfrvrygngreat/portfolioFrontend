@@ -1,0 +1,146 @@
+{
+  "name": "Dasetti Sai Kumar",
+  "email": "dasettisaikumar@gmail.com",
+  "mobile": "+91 9059245025",
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/dasetti-sai-kumar-b30340299/",
+    "github": "https://github.com/saithevfrvrygngreat"
+  },
+  "aboutMe": "I am a Computer Science & Engineering student with a strong interest in full-stack development and modern web technologies. I work with the MERN stack to build scalable, high-performance applications that deliver smooth and intuitive user experiences.",
+  "skills": {
+    "languages": ["Java", "C", "C++", "Python", "HTML", "CSS"],
+    "frameworks": ["NodeJS", "React"],
+    "tools": ["MySQL", "Postman", "Visual Studio Code", "MongoDB"]
+  },
+  "training": [
+    {
+      "title": "Summer Training in Advance Data Structure",
+      "organization": "Lovely Professional University",
+      "date": "July 2025",
+      "highlights": [
+        "Learned key advanced data structures like AVL Trees, Heaps, and Trees",
+        "Implemented efficient search and traversal techniques using BFS and DFS",
+        "Applied graph and tree algorithms to solve complex computational problems"
+      ],
+      "certificateUrl": "/certificates/training_cert.pdf",
+      "image": "/certifications_images/ds.png"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Food Delivery Website",
+      "date": "November 2023",
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "description": "Developed a responsive food ordering interface with sections for menu display, cart updates, and order summary. Designed a clean layout for browsing, adding items, and placing an order.",
+      "githubUrl": "https://github.com/saithevfrvrygngreat/firstyearproject.git",
+      "liveUrl": "https://firstyearproject.vercel.app/",
+      "image": "/project_images/food_delivery.jpg"
+    },
+    {
+      "title": "AutoGlow",
+      "date": "April 2025",
+      "techStack": ["ReactJs", "NodeJs", "Javascript", "MongoDB"],
+      "description": "Built AutoGlow, a service platform for car painting, dent removal, and vehicle stickering. Developed a responsive UI using React.js and a scalable backend with Node.js and MongoDB Atlas.",
+      "githubUrl": "https://github.com/saithevfrvrygngreat/Carpaintingwebsite.git",
+      "liveUrl": "https://carpaintingwebsite-m4t6.vercel.app/",
+      "image": "/project_images/autoglow.jpg"
+    },
+    {
+      "title": "LingoLearn",
+      "date": "Current",
+      "techStack": ["ReactJs", "NodeJs", "Javascript", "MongoDB"],
+      "description": "Built LinguaLearn, an interactive platform for learning multiple languages with lessons, quizzes, and progress tracking. Developed a responsive frontend using React.js and a backend with Node.js and MongoDB.",
+      "githubUrl": "https://github.com/saithevfrvrygngreat/lang-spark-leap",
+      "liveUrl": "https://lang-spark-leap.vercel.app/auth",
+      "image": "/project_images/lingolearn.jpg"
+    }
+  ],
+  "certificates": [
+    { 
+      "title": "Oracle Data Platform 2025 Certified Foundations Associate", 
+      "issuer": "Oracle", 
+      "date": "March 2026",
+      "image": "/certifications_images/oracle_data.png",
+      "certificateUrl": "/certifications_downloads/oracle_data.pdf"
+    },
+    { 
+      "title": "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate", 
+      "issuer": "Oracle", 
+      "date": "March 2026",
+      "image": "/certifications_images/oracle_ai.png",
+      "certificateUrl": "/certifications_downloads/oracle_ai.pdf"
+    },
+    { 
+      "title": "Completion of webdevelopment", 
+      "issuer": "FreeCodeCamp", 
+      "date": "October 2023",
+      "image": "/certifications_images/fcc_web.png",
+      "certificateUrl": "/certifications_downloads/fcc_web.pdf"
+    },
+    { 
+      "title": "Completion of Python Programming", 
+      "issuer": "Infosys Springboard", 
+      "date": "February 2024",
+      "image": "/certifications_images/python.png",
+      "certificateUrl": "/certifications_downloads/python.pdf"
+    },
+    { 
+      "title": "Certificate from Hackathon", 
+      "issuer": "Code Wise", 
+      "date": "March 2024",
+      "image": "/certifications_images/hackathon.png",
+      "certificateUrl": "/certifications_downloads/hackathon.pdf"
+    },
+    { 
+      "title": "Completion of Javascript", 
+      "issuer": "codewithrandom", 
+      "date": "March 2024",
+      "image": "/certifications_images/js.png",
+      "certificateUrl": "/certifications_downloads/js.pdf"
+    }
+  ],
+  "achievements": [
+    { "title": "HackerRank 30 Days of Code", "highlights": ["Earned 30 Days of Code Badge"], "image": "/achievement_images/badge_30_days.png" },
+    { "title": "Jan LeetCoding Challenge", "highlights": ["Jan LeetCoding Challenge Badge"], "image": "/achievement_images/badge_jan.png" },
+    { "title": "Feb LeetCoding Challenge", "highlights": ["Feb LeetCoding Challenge Badge"], "image": "/achievement_images/badge_feb.png" },
+    { "title": "50 Days Badge 2026", "highlights": ["Completed 50 days of coding streak in 2026"], "image": "/achievement_images/badge_50_days.png" }
+  ],
+  "codingPlatforms": [
+    { 
+      "name": "LeetCode", 
+      "url": "https://leetcode.com/u/saikumar12345678910/", 
+      "details": [
+        { "label": "Global Rank", "value": "990,707" },
+        { "label": "Solved", "value": "155/3873" },
+        { "label": "Max Streak", "value": "93 Days" },
+        { "label": "Total Active", "value": "95 Days" }
+      ],
+      "strength": 65
+    },
+    { 
+      "name": "GeeksforGeeks", 
+      "url": "https://www.geeksforgeeks.org/profile/dasettis49qn?tab=activity", 
+      "details": [
+        { "label": "Coding Score", "value": "354" },
+        { "label": "Problems Solved", "value": "92" },
+        { "label": "Institute Rank", "value": "5811" },
+        { "label": "2026 Activity", "value": "99 Submissions" }
+      ],
+      "strength": 55
+    },
+    { 
+      "name": "HackerRank", 
+      "url": "https://www.hackerrank.com/profile/dasettisaikumar", 
+      "details": [
+        { "label": "Badges", "value": "C++, 30 Days" },
+        { "label": "Proficiency", "value": "5 Stars" }
+      ],
+      "strength": 85
+    }
+  ],
+  "education": [
+    { "school": "Lovely Professional University", "degree": "Bachelor of Technology - Computer Science and Engineering", "cgpa": "8.07", "date": "Since August 2023", "location": "Punjab, India" },
+    { "school": "Narayana Jr. College", "degree": "Intermediate", "percentage": "96.1%", "date": "April 2021 - March 2023", "location": "Nellore, Andhra Pradesh" },
+    { "school": "Simhapuri Public School", "degree": "Matriculation", "percentage": "95%", "date": "April 2020 - March 2021", "location": "Nellore, Andhra Pradesh" }
+  ]
+}

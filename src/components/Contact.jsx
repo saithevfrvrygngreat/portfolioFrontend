@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, Mail, Phone, MapPin } from 'lucide-react';
-import axios from 'axios';
 
 const Contact = ({ theme, isDarkMode }) => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -9,13 +8,14 @@ const Contact = ({ theme, isDarkMode }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus('Sending...');
-    axios.post('http://localhost:5000/api/contact', formData)
-      .then(() => {
-        setStatus('Message Sent!');
+    const subject = encodeURIComponent(`Portfolio Inquiry from ${formData.name}`);
+    const body = encodeURIComponent(`${formData.message}\n\nFrom: ${formData.name}\nEmail: ${formData.email}`);
+    window.location.href = `mailto:dasettisaikumar@gmail.com?subject=${subject}&body=${body}`;
+    setStatus('Opening email client...');
+    setTimeout(() => {
+        setStatus('');
         setFormData({ name: '', email: '', message: '' });
-      })
-      .catch(() => setStatus('Error sending message.'));
+    }, 2500);
   };
 
   return (

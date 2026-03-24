@@ -16,7 +16,7 @@ import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
-import axios from 'axios';
+import cvDataRaw from './data/cv.json';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -27,22 +27,11 @@ function App() {
 
   useEffect(() => {
     setLoading(true);
-    const apiUrl = import.meta.env.DEV 
-      ? 'http://localhost:5000/api/cv' 
-      : 'https://portfoliobackend-l4vf.onrender.com/api/cv';
-      
-    axios.get(apiUrl)
-      .then(res => {
-        setCvData(res.data);
-        setError(null);
-      })
-      .catch(err => {
-        console.error("Error fetching CV data:", err);
-        setError("Backend Unavailable");
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+    // Artificial delay to keep the smooth loading animation
+    setTimeout(() => {
+      setCvData(cvDataRaw);
+      setLoading(false);
+    }, 800);
   }, []);
 
   const toggleTheme = useCallback(() => setIsDarkMode(prev => !prev), []);
